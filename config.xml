@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bsdmasterindex.phonegapgeolocation-test"
+        version     = "1.0.1"
+        versionCode = "10" >
+        <!-- versionCode is optional and Android only -->
+        <preference name="phonegap-version" value="cli-5.2.0" />
+
+        <name>GPS Tracking</name>
+        <description>Simple GPS Test</description>
+        <author href="http://geosnack.com" email="noah@geosnack.com">
+        Noah Huntington
+        </author>
+        <gap:platform name="android" />
+        <gap:platform name="ios" />
+		
+		<!-- iPhone / iPod Touch -->
+		<icon src="icon.png" gap:platform="ios"/>
+		
+
+        <preference name="permissions" value="none"/>
+        <!-- device required so we can detect if we are using iOS -->
+		<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+		<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+    </widget>
